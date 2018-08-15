@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp: Build a Survey Form</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/solomonkamanga/image/upload/v1534339557/survey-form/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,900" rel="stylesheet">
+</head>
+
+<body>
+    <div id="logo-container">
+        <img id="star-wars-logo" src="https://res.cloudinary.com/solomonkamanga/image/upload/v1534339606/survey-form/star-wars-logo.png" alt="Star Wars logo">
+    </div>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Seeking information about a galaxy far, far away....</p>
+
+    <div class="container">
+        <form id="survey-form" action="#">
+            <!-- Name -->
+            <div class="row">
+                <div class="col-25">
+                    <label for="name" id="name-label" class="survey-question">Name *</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="row">
+                <div class="col-25">
+                    <label for="email" id="email-label" class="survey-question">Email *</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+            </div>
+
+            <!-- Number -->
+            <div class="row">
+                <div class="col-25">
+                    <label for="number" id="number-label" class="survey-question">Age</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="number" min="5" max="75" placeholder="Enter your age">
+                </div>
+            </div>
+
+            <!-- Dropdown -->
+            <div class="row">
+                <div class="col-25">
+                    <label for="dropdown" class="survey-question">Favorite Star Wars Movie</label>
+                </div>
+                <div class="col-75">
+                    <select id="dropdown">
+                        <option disabled selected>Pick a movie</option>
+                        <option value="episode-iv">Episode IV - A New Hope</option>
+                        <option value="episode-v">Episode V - The Empire Strikes Back</option>
+                        <option value="episode-vi">Episode VI - Return of the Jedi</option>
+                        <option value="episode-i">Episode I - The Phantom Menace</option>
+                        <option value="episode-ii">Episode II - Attack of the Clones</option>
+                        <option value="episode-iii">Episode III - Revenge of the Sith</option>
+                        <option value="episode-vii">Episode VII - The Force Awakens</option>
+                        <option value="episode-viii">Episode VIII - The Last Jedi</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Radio Buttons -->
+            <div class="row">
+                <div class="col-25">
+                    <label class="survey-question">
+                        Which side are you on?
+                    </label>
+                </div>
+                <div class="col-75">
+                    <label>
+                        <input type="radio" name="light-dark" value="1">the Dark Side
+                    </label>
+                    <label>
+                        <input type="radio" name="light-dark" value="2">the Light Side
+                    </label>
+                </div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="row">
+                <div class="col-25">
+                    <label class="survey-question">
+                        What are your favorite things about Star Wars?
+                    </label>
+                </div>
+                <div class="col-25">
+                    <label>
+                        <input type="checkbox" value="1" name="favorite-thing">The Jedi Order
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" value="2" name="favorite-thing">Lightsaber
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" value="3" name="favorite-thing">Darth Vader
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" value="4" name="favorite-thing">Sith
+                    </label>
+                </div>
+                <div class="col-25">
+                    <label>
+                        <input type="checkbox" value="5" name="favorite-thing">Anakin Skywalker
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" value="6" name="favorite-thing">The Empire
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" value="7" name="favorite-thing">Clone Troopers
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" value="8" name="favorite-thing">Obi-Wan Kenobi
+                    </label>
+                </div>
+                <div class="col-25">
+                    <label>
+                        <input type="checkbox" value="9" name="favorite-thing">Luke Skywalker
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" value="10" name="favorite-thing">Yoda
+                    </label>
+                </div>
+            </div>
+
+            <!-- Text Area -->
+            <div class="row">
+                <div class="col-25">
+                    <label class="survey-question">What is your favorite line from the Stars Wars Saga?</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="favorite-line" placeholder="Doesn't have to be verbatim, you can paraphrase.">
+                    </textarea>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <div>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <p id="catch-phrase">May the force be with you.</p>
+    </div>
+
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+
+</html>
